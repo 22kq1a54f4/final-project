@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>UI pages</title>
+       <body><script>
+         // User Validations
+ function loginValidation() {
+             // Ramesh
+   var uname = document.myform.username.value;
+              //Ramesh@123
+   var password = document.myform.password.value;
+             if(uname==null || uname=="") {
+               alert("Name cant be blank")
+               return false;  
+            } else if (password.length<6){
+               alert("Password Must be 6 letters")
+               return false;
+            }  
+            return true                 
+         }           
+      </script>
+     </script>
+       </body>
+    </head>
+    <style>
+          input[type="submit"] {
+    width : 10%;
+    padding : 5px;
+    background-color :chartreuse;
+    color :black;
+    border :black;
+    border-radius : auto;
+    cursor : pointer;
+    transition : background-color 0.3s;
+
+  }
+  input[type="submit"]:hover{
+    background-color: blanchedalmond;
+  }
+    p{
+     color:darkorange;
+    }
+    font{
+        color:chartreuse;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+        body{
+            
+            background-size : cover;
+        }
+    </style>
+   <center>
+    <body>
+        <body background="c:\Users\pulip\OneDrive\Pictures\background 7.jpg"><br><br><br><br><br>
+        <form name="myform" action="loginsuccess.html" 	onsubmit="return loginValidation(this)">
+ 
+            <font size=9 >LOGIN FORM</font> <br><br>
+        <p> user name:<input type="text" name="username" placeholder="user name" > <br><br>
+
+            password:<input type="text"name="password" placeholder="password" > <br><br>
+   
+        </p>
+                                 <input type="submit">
+        </form>
+    </center>
+    </body>
+        </html>   
+

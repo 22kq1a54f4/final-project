@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage with Logo and Buttons</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: none;
+    padding: 5px 20px; /* Adjust padding as needed */
+    position: fixed; /* Fixed positioning to keep the header at the top */
+    width: 100%;    /* Full width header */
+    top: 0;         /* Position at the top of the viewport */
+    z-index: 1000;  /* Ensure it stays on top of other elements */
+    display: flex;  /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space out items */
+}
+
+/* Logo Styling */
+.logo {
+    width: 85px; /* Adjust the size as needed */
+    height: auto;
+}
+
+/* Button Container Styling */
+.button-container {
+    display: flex;  /* Use flexbox to align buttons */
+    gap: 10px;     /* Space between buttons */
+}
+
+/* Button Styling */
+.login-btn, .signin-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.login-btn:hover, .signin-btn:hover {
+    background-color: #0056b3;
+}
+body{
+            background-size:cover;
+        }
+        font{
+            color:cornflowerblue;
+              }
+              h2{
+                color:crimson;
+              }
+              .video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the video behind other content */
+    overflow: hidden;
+}
+
+.video-background video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+}
+font{
+            color:chartreuse;
+        }
+        h1{
+            color:crimson;
+         font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+</style>
+<body>
+    <center>
+        <div class="video-background">
+            <video autoplay loop muted playsinline>
+                <source src="c:\Users\pulip\Videos\cooking video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <center>
+            <div class="welcome-section"><br><br><br><br><br><br><br><br><br>
+                <font size=8 >Welcome to Foodie's Delight!</font><br><br>
+                <h1>Enjoy the best dishes from the comfort of your home. Order now and experience our delicious menu!</h1>
+            </div>   
+        </center>
+    <nav>
+    <header>
+        <a href="nav.html" class="logo">
+        <img src="c:\Users\pulip\OneDrive\Desktop\logo.jpg" alt="Company Logo" class="logo"></a>
+       <div class="button-container">
+            <form action="loginpage.html">
+            <button class="login-btn">Login</button></form>
+            <form action="registration.html">
+            <button class="signin-btn">Sign In</button></form>
+        </div>
+    </header><br><br><br><br>
+ 
+</body>
+</html>
